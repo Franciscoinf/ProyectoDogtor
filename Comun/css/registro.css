@@ -1,0 +1,14 @@
+     .registro-box {
+            max-width: 600px;
+            margin: 3rem auto;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            background: #f8f9fa;
+        }
+        .alert { border-radius: 10px; }
+        .password-note {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }

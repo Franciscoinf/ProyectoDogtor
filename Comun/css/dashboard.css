@@ -1,0 +1,89 @@
+ 
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('tu-imagen-fondo-veterinaria.jpg') center/cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.banner-content {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.main-title {
+    color: #fff;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1.5rem;
+}
+
+.highlight {
+    color: #3498db;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .banner-content {
+        max-width: 90%;
+    }
+    
+    .main-title {
+        font-size: 2.5rem;
+    }
+}
+        h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            font-family: 'Arial Rounded MT Bold', sans-serif;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        .logo {
+            width: 150px;
+            margin-bottom: 30px;
+            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
+        }
+
+        .slogan {
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .cta-button {
+            background: #ff6b6b;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            background: #ff5252;
+        }
+
+        .pet-icons {
+            margin-top: 40px;
+            opacity: 0.8;
+        }
+
+        .pet-icons img {
+            width: 80px;
+            margin: 0 15px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
