@@ -1,0 +1,143 @@
+/* Estilos generales */
+body {
+    background-color: #f0f8ff;
+    min-height: 100vh;
+}
+
+.dashboard-content {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Títulos */
+h1 {
+    color: #2c3e50;
+    font-family: 'Comic Sans MS', cursive;
+    border-bottom: 3px solid #ff9f43;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+/* Tarjetas */
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0 !important;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Tabla */
+.table {
+    margin-bottom: 0;
+    border-collapse: separate;
+    border-spacing: 0 0.5rem;
+}
+
+.table thead th {
+    background-color: #17a2b8;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table tbody tr {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 1rem;
+}
+
+.table td:nth-child(2),
+.table td:nth-child(4) {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.table td:nth-child(3),
+.table td:nth-child(5) {
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+/* Formulario */
+.form-label {
+    font-weight: 500;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.form-select,
+.form-control {
+    border-radius: 8px;
+    border: 2px solid #ced4da;
+    transition: border-color 0.3s ease;
+}
+
+.form-select:focus,
+.form-control:focus {
+    border-color: #17a2b8;
+    box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.25);
+}
+
+/* Precio estimado */
+#precioEstimado {
+    color: #28a745;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dashboard-content {
+        padding: 1rem;
+    }
+    
+    .table-responsive {
+        border: none;
+    }
+    
+    .col-md-4 {
+        margin-bottom: 1rem;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    .table td {
+        font-size: 0.85rem;
+        padding: 0.75rem;
+    }
+}
+
+/* Animaciones */
+.alert {
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
